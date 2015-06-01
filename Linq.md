@@ -4,13 +4,13 @@
 
 ### Simple query
 
-```chsarp
+```csharp
 var users = Database.Query<User>().Where(y => y.UserId == 2 && !y.IsMale).ToList();
 ```
 
 ### Advnaced Query
 
-```chsarp
+```csharp
 var users = Database.Query<User>()
 					.Where(y => y.UserId > 0)
 					.OrderBy(x => x.Age)
@@ -21,7 +21,7 @@ var users = Database.Query<User>()
 
 # Delete
 
-```chsarp
+```csharp
 Database.DeleteMany<User>().Where(x => x.IsMale == true).Execute();
 ```
 
