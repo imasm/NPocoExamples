@@ -6,7 +6,7 @@
 
 ```chsarp
 var users = Database.Query<User>().Where(y => y.UserId == 2 && !y.IsMale).ToList();
-```chsarp
+```
 
 ### Advnaced Query
 
@@ -17,7 +17,7 @@ var users = Database.Query<User>()
 					.ThenBy(x => x.Name)
 					.Limit(50)
 					.ToList();
-```chsarp
+```
 
 # Delete
 
